@@ -53,6 +53,7 @@ for (let i=0; i<7;i++){
     totalAcres+=fujiAcres[i] + galaAcres[i] + pinkAcres[i]
 }
 console.log(totalAcres)
+//this loops through the days the of week of each array and adds each element to the totalAcres variable
 // CODE HERE
 
 
@@ -72,6 +73,7 @@ console.log(totalAcres)
 */
 var averageDailyAcres=totalAcres/7
 console.log(averageDailyAcres)
+//this takes the average of the totalAcres and saves it as the variable averageDailyAcres
 // CODE HERE
 
 
@@ -114,6 +116,7 @@ while (acresLeft>0){
     acresLeft-=averageDailyAcres
 }
 console.log(days)
+//this while loop checks the variable acresLeft and sees if it is greater than 0. If it is, then it adds to the days counter and decrements the variable acresLeft by the averageDailyAcres variable. 
 // CODE HERE
 
 
@@ -156,6 +159,8 @@ let pinkTons = []
 for (let i=0;i<7;i++){
     pinkTons.push(pinkAcres[i]*6.5)
 }
+//these for loops loop through the arrays *Acres and multiplies each element by 6.5. These are pushed to the new array *Tons
+
 console.log(fujiTons)
 console.log(galaTons)
 console.log(pinkTons)
@@ -192,6 +197,8 @@ let galaPounds =galaTons.reduce(function(a,b){
 let pinkPounds =pinkTons.reduce(function(a,b){
     return a+2000*b
 },0)
+
+//these new variables loop through each *Tons array and adds them up but not before multiplying each element by 2000
 console.log(fujiPounds)
 console.log(galaPounds)
 console.log(pinkPounds)
@@ -223,7 +230,7 @@ let fujiProfit =fujiPounds*fujiPrice
 let galaProfit =galaPounds*galaPrice
 let pinkProfit =pinkPounds*pinkPrice
 
-
+//these new variables calculates the profit by multiplying the pounds by price/pound
 
 
 
@@ -238,5 +245,6 @@ let pinkProfit =pinkPounds*pinkPrice
     Log `totalProfit` to the console.
 */
 let totalProfit = fujiProfit+galaProfit+pinkProfit
+//total profit is equal to the sum of apples profit
 console.log(totalProfit)
 // CODE HERE
